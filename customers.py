@@ -21,3 +21,21 @@ print(customer)
 
 del customer["email"]
 print(customer)
+
+# --- Exercise 3 ---
+email = customer.get("email", "no email on file")
+print(email)
+
+try:
+    print(customer["email"])
+except KeyError as error:
+    print(f"KeyError caught: {error} is not in the dict anymore")
+
+# --- Exercise 4 ---
+for key, value in customer.items():
+    print(f"{key}: {value}")
+
+# Without .items(), the loop only gives you the keys. To get the value
+# you have to look it up yourself with customer[key].
+for key in customer:
+    print(key)
