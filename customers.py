@@ -1,3 +1,7 @@
+# Self Assessment Questions
+# Q1: I would use brackets when a field has to be there, like a customer's name, because if it's missing something is wrong and I want the error to show me. I would use .get() for fields that are optional, like email or phone, since not every customer gives those and a default keeps the program running. My rule of thumb is: if the key must exist use brackets, and if it might be missing use .get() with a default.
+# Q2: Building the summary dictionary reminds me of a pivot table or SUMIF in Excel, where you add up sales for each region. The Python version is more useful for large datasets because Excel gets slow with a lot of rows and has a row limit, and I would have to rebuild the pivot table every time new data came in. The loop works the same on 3 transactions or a million, and I can just run it again on next month's data.
+
 # --- Exercise 1 ---
 customer = {
     "name": "Alice",
